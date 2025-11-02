@@ -26,7 +26,10 @@ const getGames = async () => {
     //const firstGame = document.querySelector("div._1sn9nye8._1dzxdj5._1dzxdj3c._1dzxdj72k._1dzxdj1tk");
     // Fetch the sub-elements from the previously fetched quote element
     // Get the displayed text and return it (`.innerText`)
-    const title = document.querySelector("p._1fs09382p._1dzxdjxc._1dzxdj13q._1dzxdj1a4._1dzxdj1gi._1dzxdj1tp._1dzxdj2qk._1fs093810._1dzxdj6vy._1fs093843._1fs093848._1fs09383n._1dzxdj6tv._1dzxdj6tz._1dzxdj6ti").innerText;
+    const page = document.querySelector("div._1sn9nye8._1dzxdj5._1dzxdj3c._1dzxdj72k._1dzxdj7f1._1dzxdj1tk._1dzxdj1oa")
+    const box = page.querySelector("div")
+    const game = box.querySelector("div._1sn9nye8._1dzxdj5._1dzxdj3c._1dzxdj72k._1dzxdj1tk")
+    const title = game.querySelector("p._1fs09382p._1dzxdjxc._1dzxdj13q._1dzxdj1a4._1dzxdj1gi._1dzxdj1tp._1dzxdj2qk._1fs093810._1dzxdj6vy._1fs093843._1fs093848._1fs09383n._1dzxdj6tv._1dzxdj6tz._1dzxdj6ti").innerText;
     //const gm = firstGame.querySelector("p._1fs09382p._1dzxdjxc._1dzxdj13q._1dzxdj1a4._1dzxdj1gi._1dzxdj1tp._1dzxdj2qy._1fs0938z._1dzxdj6vy._1fs093841._1fs093848._1fs09383n._1dzxdj6tv._1dzxdj6u2._1dzxdj6t9").innerText;  
 
     return { title, };
